@@ -1,0 +1,219 @@
+Data insights-->
+
+NUMERIC COLUMN ANALYSIS:
+column: Row IDmean: 5097.5
+median: 5097.5
+max: 10194
+min: 1
+column: Salesmean: 228.22585386501862
+median: 53.91
+max: 22638.48
+min: 0.444
+column: Quantitymean: 3.791838336276241
+median: 3.0
+max: 14
+min: 1
+column: Discountmean: 0.15538453992544635
+median: 0.2
+max: 0.8
+min: 0.0
+column: Profitmean: 28.673417166960956
+median: 8.69
+max: 8399.976
+min: -6599.978
+categorical column analysis: 
+
+column: Order ID
+
+unique values: 5111
+
+top value : US-2026-100111
+TOP 5 value counts:
+Order ID
+US-2026-100111    14
+US-2026-157987    12
+US-2025-108504    11
+US-2025-165330    11
+US-2025-105732    10
+Name: count, dtype: int64
+
+column: Ship Mode
+
+unique values: 4
+
+top value : Standard Class
+TOP 5 value counts:
+Ship Mode
+Standard Class    6120
+Second Class      1979
+First Class       1548
+Same Day           547
+Name: count, dtype: int64
+
+column: Customer ID
+
+unique values: 804
+
+top value : WB-21850
+TOP 5 value counts:
+Customer ID
+WB-21850    41
+BF-11170    37
+GG-14650    36
+XP-21865    34
+JL-15835    34
+Name: count, dtype: int64
+
+column: Customer Name
+
+unique values: 800
+
+top value : William Brown
+TOP 5 value counts:
+Customer Name
+William Brown    41
+Ben Ferrer       37
+Greg Guthrie     36
+Xylona Preis     34
+John Lee         34
+Name: count, dtype: int64
+
+column: Segment
+
+unique values: 3
+
+top value : Consumer
+TOP 5 value counts:
+Segment
+Consumer       5281
+Corporate      3090
+Home Office    1823
+Name: count, dtype: int64
+
+column: Country/Region
+
+unique values: 2
+
+top value : United States
+TOP 5 value counts:
+Country/Region
+United States    9994
+Canada            200
+Name: count, dtype: int64
+
+column: City
+
+unique values: 542
+
+top value : New York City
+TOP 5 value counts:
+City
+New York City    915
+Los Angeles      747
+Philadelphia     537
+San Francisco    510
+Seattle          428
+Name: count, dtype: int64
+
+column: State/Province
+
+unique values: 59
+
+top value : California
+TOP 5 value counts:
+State/Province
+California      2001
+New York        1128
+Texas            985
+Pennsylvania     587
+Washington       506
+Name: count, dtype: int64
+
+column: Postal Code
+
+unique values: 654
+
+top value : 10035
+TOP 5 value counts:
+Postal Code
+10035    263
+10024    230
+10009    229
+94122    203
+10011    193
+Name: count, dtype: int64
+
+column: Region
+
+unique values: 4
+
+top value : West
+TOP 5 value counts:
+Region
+West       3253
+East       2986
+Central    2335
+South      1620
+Name: count, dtype: int64
+
+column: Product ID
+
+unique values: 1862
+
+top value : FUR-FU-10004270
+TOP 5 value counts:
+Product ID
+FUR-FU-10004270    20
+OFF-PA-10001970    19
+TEC-AC-10003832    18
+TEC-AC-10003628    15
+FUR-CH-10002647    15
+Name: count, dtype: int64
+
+column: Category
+
+unique values: 3
+
+top value : Office Supplies
+TOP 5 value counts:
+Category
+Office Supplies    6128
+Furniture          2201
+Technology         1865
+Name: count, dtype: int64
+
+column: Sub-Category
+
+unique values: 17
+
+top value : Binders
+TOP 5 value counts:
+Sub-Category
+Binders        1548
+Paper          1384
+Furnishings    1009
+Phones          903
+Storage         856
+Name: count, dtype: int64
+
+column: Product Name
+
+unique values: 1849
+
+top value : Staples
+TOP 5 value counts:
+Product Name
+Staples                       50
+Staple envelope               48
+Easy-staple paper             46
+Avery Non-Stick Binders       20
+KI Adjustable-Height Table    20
+Name: count, dtype: int64
+
+
+ correlation matrix:             Row ID     Sales  Quantity  Discount    Profit
+Row ID    1.000000 -0.008958  0.000502 -0.001474  0.003022
+Sales    -0.008958  1.000000  0.198457 -0.027756  0.481460
+Quantity  0.000502  0.198457  1.000000  0.007475  0.066145
+Discount -0.001474 -0.027756  0.007475  1.000000 -0.218882
+Profit    0.003022  0.481460  0.066145 -0.218882  1.000000
