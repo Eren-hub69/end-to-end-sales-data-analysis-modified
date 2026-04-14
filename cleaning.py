@@ -1,7 +1,8 @@
 import pandas as pd
 
 def clean_data(file):
- 
+    if not os.path.exists("outputs"):
+        os.makedirs("outputs")
      df=pd.read_csv(file)
     
      numeric_cols=df.select_dtypes(include=['int64','float64']).columns 
@@ -18,5 +19,7 @@ def clean_data(file):
         if 'date' in col.lower():
            df[col]=pd.to_datetime(df[col],errors='coerce')
            df[col]=df[col].ffill()   
+         
+      df.to_csv("outputs/cleaned_data.csv",index=False)
 
      return df
